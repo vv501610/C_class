@@ -9,7 +9,7 @@ int main() {
 
     // 상품 개수 입력
     do {
-        printf("상품 개수를 입력하세요 (1-100): \n");
+        printf("상품 개수를 입력하세요 (1~100): \n");
         scanf("%d", &count);
     } while (count < 1 || count > MAX_PRODUCTS);
 
@@ -27,7 +27,7 @@ int main() {
     }
 
     // ID 입력 및 재고 출력
-    printf("조회할 상품의 ID를 입력하세요 (1-%d): ", count);
+    printf("조회할 상품의 ID를 입력하세요 (1~%d): ", count);
     scanf("%d", &id);
 
     if (id < 1 || id > count) {
