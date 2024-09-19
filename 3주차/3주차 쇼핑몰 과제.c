@@ -2,9 +2,11 @@
 
 #define MAX_PRODUCTS 5
 
+
+
 void inputStock(int *stock, int count);
 void inputSales(int *stock, int *sales, int count);
-void displayStatus(int *stock, int *sales, int count);
+void displayProductStatus(int *stock, int *sales, int count);
 void inputIndividualStock(int *stock, int count);
 void inputIndividualSales(int *stock, int *sales, int count);
 
@@ -12,6 +14,8 @@ int main() {
     int stock[MAX_PRODUCTS] = {0, 0, 0, 0, 0};
     int sales[MAX_PRODUCTS] = {0, 0, 0, 0, 0};
     int choice;
+
+    
 
 
     while (1) {
@@ -115,7 +119,7 @@ void inputIndividualSales(int *stock, int *sales, int count) {
     }
 }
 
-void displayStatus(int *stock, int *sales, int count) {
+void displayProductStatus(int *stock, int *sales, int count) {
     int total_sales = 0;
     int total_stock = 0;
     int max_sales = 0, min_sales = *sales;
