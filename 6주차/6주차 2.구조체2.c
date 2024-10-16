@@ -13,7 +13,7 @@ double dist(struct point p1, struct point p2) {
 int main() {
     struct point p1 = {10, 20}; 
     struct point p2; 
-    double d;
+
 
     p2.x = 30;
     p2.y = 40;
