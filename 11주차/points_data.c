@@ -70,7 +70,7 @@ int main(void){
 			printPoint(points, count);
 			break;
 		case 3:
-			system("cls");
+			system("clear");
 			break;
 		case 4: //file save
 			if (!saveFile(points, count)) {
