@@ -93,11 +93,11 @@ int main(int argc, char* argv[]) {
 
 	LOTTO l, l2;
 	FILE* fp;
-	fp = fopen("20240998.bin", "wb");
+	fp = fopen("20241020.bin", "wb");
 
 	int count;
 	srand(time(NULL));
-	l = createAuto(20240998);
+	l = createAuto(20241020);
 	fwrite(&l, sizeof(LOTTO), 1, fp);
 	printLotto(l);
 
